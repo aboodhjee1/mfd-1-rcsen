@@ -411,9 +411,14 @@
   }
   .option:hover { border-color: var(--ink-soft); background: var(--bg-soft); }
   .option.selected {
-    border-color: var(--ink);
-    background: var(--bg-soft);
+    border-color: var(--accent);
+    border-width: 2px;
+    background: var(--accent-soft);
     color: var(--ink);
+  }
+  .option.selected .option-letter {
+    color: var(--accent);
+    font-weight: 700;
   }
   .option.correct {
     border-color: var(--correct);
